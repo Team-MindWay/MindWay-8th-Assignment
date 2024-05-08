@@ -2,6 +2,13 @@ fun main() {
   val word = "마인드웨이" //word[0] = 마 word[1] 인  word[2] = 드  word[3] = 웨  word[4] = 이
   val length = word.length
 
+<<<<<<< HEAD
+=======
+fun main() {
+  val word = "마인드웨이" //word[0] = 마 word[1] 인  word[2] = 드  word[3] = 웨  word[4] = 이
+  val length = word.length
+
+>>>>>>> e7cc8d25ee9fb05d1b514f42fa731580adf8991d
   for (i in 0 until length) { //변수 i를 변수 length부터 0까지 반복
       var output = "" // 변수 output을 선언 및 초기화
       for (j in i until length) { //변수 j을 i까지 반복
