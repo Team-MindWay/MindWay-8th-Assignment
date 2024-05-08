@@ -5,7 +5,7 @@ void organize(char str[][51], int compare);
 
 int main(void) {
     int n;
-    scanf("%d", &n);
+    scanf("%d", &n); //입력횟수를 받는 코드
     char book_name[1000][51];
     int counting[1000] = { 0 }; 
 
