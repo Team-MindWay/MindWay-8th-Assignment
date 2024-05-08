@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+//mindway homework
+
 void organize(char str[][51], int compare);
 
 int main(void) {
