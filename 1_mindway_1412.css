@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+}
+.header {
+    height:100px;
+    background-color:rgb(158, 161, 212);
+    margin-top:0px;
+    margin-left:0px;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+#Mindway {
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+#name {
+    justify-content: flex-end;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    font-size:15px;
+    width: 25vw;
+}
