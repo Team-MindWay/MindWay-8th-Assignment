@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  background-color: rgb(158, 161, 212);
+  height: 100px;
+  color: white;
+  justify-content: space-around;
+  padding: 0;
+  align-items: center;
+}
+span {
+  gap: 10px;
+}
+body {
+  margin: 0;
+}
