@@ -1,4 +1,4 @@
-body{
+body {
     margin:0px;
 }
 .header {
@@ -18,13 +18,13 @@ body{
 
 .name {
     display:flex;
-    justify-content: flex-end;
+    align-items: center;
     color:white;
     font-size:15px;
     width: 30vw;
 }
-
-div{
-    padding:10px;
+li{
+    display:flex;
+    list-style-type: none;
+    margin: 5px;
 }
-
