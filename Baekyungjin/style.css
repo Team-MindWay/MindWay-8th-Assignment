@@ -7,9 +7,9 @@ header {
   padding: 0;
   align-items: center;
 }
-span {
-  gap: 10px;
-}
 body {
   margin: 0;
+}
+li {
+  display: inline;
 }
