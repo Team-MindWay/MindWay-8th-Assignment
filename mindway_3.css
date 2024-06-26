@@ -2,7 +2,7 @@ body{
     margin: 0px;
 }
 
-header {
+header{
     background-color: rgb(158, 161, 212);
     height: 100px; 
     display: flex;
@@ -11,18 +11,14 @@ header {
 }
 
 
-.title {
-    text-align: left;
+.title{
     color: white;
     width: 30px;
-   
 }
 
-.name {
-    
+.name{
     color: white;
 }
-
 
 li {
     list-style-type: none;
