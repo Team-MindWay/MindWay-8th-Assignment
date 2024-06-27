@@ -37,26 +37,26 @@ struct ContentView: View {
                     .padding(.top, 15)
                     .padding(.trailing, 24)
             }
+            
             Text("독서 신청 목록")
                 .foregroundStyle(.gray)
                 .font(.system(size: 14))
                 .padding(.top, 40)
                 .padding(.leading, 24)
-                
+
             ScrollView {
-                
-                Spacer()
-                
                 VStack(spacing: 20) {
                     Booklist(title: "세상의 마지막 기차역세상의 마지막 기차역", description: "무라세 다케시무라세 다케시무라세 다케시무라세 다케시")
                     Booklist(title: "세상의 마지막 기차역", description: "무라세 다케시")
                     Booklist(title: "세상의 마지막 기차역", description: "무라세 다케시")
                     Booklist(title: "세상의 마지막 기차역", description: "무라세 다케시")
                 }
+                .padding(.top)
             }
         }
     }
 }
+
 
 @ViewBuilder
 func Booklist(title: String, description: String) -> some View {
@@ -101,3 +101,6 @@ func Booklist(title: String, description: String) -> some View {
 #Preview {
     ContentView()
 }
+
+
+
