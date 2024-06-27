@@ -13,3 +13,6 @@ body {
 li {
   display: inline;
 }
+ul {
+  padding: 0;
+}
