@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    gap:10px;
+}
+header {
+    color:white;
+    background-color: rgb(158, 161, 212);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+}
+body {
+    margin:0;
+}
