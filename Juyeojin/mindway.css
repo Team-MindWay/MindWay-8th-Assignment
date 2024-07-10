@@ -1,6 +1,9 @@
-.background{
+body{
   margin: 0;
   padding : 0;
+}
+
+.background{
   height: 100px;
   display: flex;
   justify-content: space-around;
