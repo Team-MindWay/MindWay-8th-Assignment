@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding : 0;
+}
+
+.background{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(158, 161, 212);
+  align-items: center;
+  margin-top: 0;
+}
+
+.title{
+  color: white;
+}
+
+.name{
+  list-style: none;
+  color: white;
+  gap : 10px;
+  display: flex;
+  align-items: center;
+}
