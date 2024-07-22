@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <string android:name="some_id">
+\u00ea\u00b0\u0080\u00ec\u009d\u0084 \u00eb\u008f\u0085\u00ec\u0084\u009c \u00ed\u0096\u0089\u00ec\u0082\u00ac
+</string>
+
+
+
+</selector>

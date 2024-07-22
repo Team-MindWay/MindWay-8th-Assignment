@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="1000dp"
+    tools:ignore="MissingConstraints"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="360dp"
+        android:layout_height="64dp">
+
+        <RelativeLayout
+            android:id="@+id/mindway"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/ddd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ddfsdfdsfsdf" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_9"
+        android:layout_width="312dp"
+        android:layout_height="108dp"
+        android:layout_marginLeft="24dp"
+
+        android:layout_marginRight="24dp"
+        android:background="@drawable/goodchoice">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="20dp"
+
+
+            android:src="@drawable/ghskfen2222" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="-136dp"
+            android:lineHeight="27sp"
+            android:text="가을 독서 행사"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/maintext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="독서의 계절, 가을을 맞아 \n도서관에서 특별한 이벤트를 준비했습니다."
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/frame_175"
+        android:layout_width="312dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+
+        android:background="@drawable/frame_175"
+
+
+
+        >
+
+        <TextView
+            android:id="@+id/tite2"
+            android:layout_width="97dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="181dp"
+            android:layout_marginBottom="160dp"
+            android:gravity="top"
+            android:lineSpacingExtra="6sp"
+            android:text="목표독서량"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="-2.76sp" />
+
+        <ImageView
+            android:id="@+id/greenbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="127dp"
+            android:src="@drawable/jjjjj" />
+
+        <ImageView
+            android:id="@+id/bird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="153dp"
+            android:src="@drawable/gskfen" />
+
+        <ImageView
+            android:id="@+id/graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/h" />
+
+        <TextView
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="127dp"
+            android:text="9"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bird2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="31dp"
+            android:layout_marginBottom="125dp"
+            android:text="/"
+            android:textColor="#DBDCDE"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="129dp"
+            android:text="30"
+            android:textColor="#7EAF72"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/frame_176"
+        android:layout_width="312dp"
+        android:layout_height="249dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/frame_176"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="204dp"
+            android:text="이달의 독서왕"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/hj" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
