@@ -5,6 +5,8 @@ import com.example.board_crud.crud.Dto.BoardRequestDto;
 import com.example.board_crud.crud.Dto.BoardResponseDto;
 import com.example.board_crud.crud.service.BoardService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,33 +20,38 @@ public class BoardController {
 
     //글 등록
     @PostMapping
-    public BoardResponseDto createBoard(@RequestBody BoardRequestDto requestDto){
+    public ResponseEntity<BoardResponseDto> createBoard(@RequestBody BoardRequestDto requestDto){
         BoardResponseDto board = boardService.createBoard(requestDto);
-        return board;
+        return new ResponseEntity<>(board, HttpStatus.CREATED);
     }
     //전체 목록 조회
     @GetMapping
-    public List<BoardListResponseDto> getAllBoards(){
-        return boardService.findAllBoard();
+    public ResponseEntity<List<BoardListResponseDto>> getAllBoards(){
+        List<BoardListResponseDto> boardList = boardService.findAllBoard();
+        return new ResponseEntity<>(boardList, HttpStatus.OK);
     }
     //글 하나 조회
     @GetMapping("/{id}")
-    public BoardResponseDto getOneBoard(@PathVariable Long id){
-        return boardService.findOneBoard(id);
+    public ResponseEntity<BoardResponseDto> getOneBoard(@PathVariable Long id){
+        BoardResponseDto board = boardService.findOneBoard(id);
+        return new ResponseEntity<>(board, HttpStatus.OK);
     }
     //글 수정
     @PutMapping("/{id}")
-    public BoardResponseDto updateBoard(@PathVariable Long id, @RequestBody BoardRequestDto requestDto) {
-        return boardService.updateBoard(id, requestDto);
+    public ResponseEntity<BoardResponseDto> updateBoard(@PathVariable Long id, @RequestBody BoardRequestDto requestDto) {
+        BoardResponseDto board = boardService.updateBoard(id, requestDto);
+        return new ResponseEntity<>(board, HttpStatus.OK);
     }
     //글 삭제
     @DeleteMapping("/{id}")
-    public Long deleteBoard(@PathVariable Long id){
-        return boardService.deleteBoard(id);
+    public ResponseEntity<Long> deleteBoard(@PathVariable Long id){
+        Long deleted = boardService.deleteBoard(id);
+        return new ResponseEntity<>(deleted, HttpStatus.OK);
     }
     //비밀번호 확인
     @GetMapping("/check/{id}/{inputPassword}")
-    public boolean checkPassword(@PathVariable Long id,@PathVariable String inputPassword){
-        return boardService.checkPassword(id, inputPassword);
+    public ResponseEntity<Boolean> checkPassword(@PathVariable Long id,@PathVariable String inputPassword){
+        boolean isPasswordCorrect = boardService.checkPassword(id, inputPassword);
+        return new ResponseEntity<>(isPasswordCorrect, HttpStatus.OK);
     }
 }
