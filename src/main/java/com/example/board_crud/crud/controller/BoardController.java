@@ -1,7 +1,8 @@
 package com.example.board_crud.crud.controller;
 
 import com.example.board_crud.crud.Dto.BoardListResponseDto;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
+import com.example.board_crud.crud.Dto.BoardUpdateRequestDto;
+import com.example.board_crud.crud.Dto.BoardWriteRequestDto;
 import com.example.board_crud.crud.Dto.BoardResponseDto;
 import com.example.board_crud.crud.service.BoardService;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +21,7 @@ public class BoardController {
 
     //글 등록
     @PostMapping
-    public ResponseEntity<BoardResponseDto> createBoard(@RequestBody BoardRequestDto requestDto){
+    public ResponseEntity<BoardResponseDto> createBoard(@RequestBody BoardWriteRequestDto requestDto){
         BoardResponseDto board = boardService.createBoard(requestDto);
         return new ResponseEntity<>(board, HttpStatus.CREATED);
     }
@@ -38,7 +39,7 @@ public class BoardController {
     }
     //글 수정
     @PutMapping("/{id}")
-    public ResponseEntity<BoardResponseDto> updateBoard(@PathVariable Long id, @RequestBody BoardRequestDto requestDto) {
+    public ResponseEntity<BoardResponseDto> updateBoard(@PathVariable Long id, @RequestBody BoardUpdateRequestDto requestDto) {
         BoardResponseDto board = boardService.updateBoard(id, requestDto);
         return new ResponseEntity<>(board, HttpStatus.OK);
     }

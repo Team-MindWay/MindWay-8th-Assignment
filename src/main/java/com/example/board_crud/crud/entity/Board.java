@@ -1,5 +1,6 @@
 package com.example.board_crud.crud.entity;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
+import com.example.board_crud.crud.Dto.BoardUpdateRequestDto;
+import com.example.board_crud.crud.Dto.BoardWriteRequestDto;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,12 +19,13 @@ public class Board {
     //비밀번호
     private String password;
 
-    public Board(BoardRequestDto requestDto){
+    //생성 메소드
+    public Board(BoardWriteRequestDto requestDto){
         this.title = requestDto.getTitle();
         this.content = requestDto.getContent();
      }
     //업데이트 메소드
-    public void update(BoardRequestDto requestDto){
+    public void update(BoardUpdateRequestDto requestDto){
         this.title = requestDto.getTitle();
         this.content = requestDto.getContent();
         this.password = requestDto.getPassword();

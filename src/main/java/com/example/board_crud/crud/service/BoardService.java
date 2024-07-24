@@ -1,7 +1,8 @@
 package com.example.board_crud.crud.service;
 
 import com.example.board_crud.crud.Dto.BoardListResponseDto;
-import com.example.board_crud.crud.Dto.BoardRequestDto;
+import com.example.board_crud.crud.Dto.BoardUpdateRequestDto;
+import com.example.board_crud.crud.Dto.BoardWriteRequestDto;
 import com.example.board_crud.crud.Dto.BoardResponseDto;
 import com.example.board_crud.crud.entity.Board;
 import com.example.board_crud.crud.repository.BoardRepository;
@@ -19,7 +20,7 @@ public class BoardService {
 
     private final BoardRepository boardRepository;
     //글 생성
-    public BoardResponseDto createBoard(BoardRequestDto requestDto){
+    public BoardResponseDto createBoard(BoardWriteRequestDto requestDto){
         Board board = new Board(requestDto);
         boardRepository.save(board);
         return new BoardResponseDto(board);
@@ -46,7 +47,7 @@ public class BoardService {
     }
     //글 수정
     @Transactional
-    public BoardResponseDto updateBoard(Long id, BoardRequestDto requestDto) {
+    public BoardResponseDto updateBoard(Long id, BoardUpdateRequestDto requestDto) {
         Board board = boardRepository.findById(id).orElseThrow(
                 () -> new IllegalArgumentException("해당 아이디가 존재하지 않습니다.")
         );

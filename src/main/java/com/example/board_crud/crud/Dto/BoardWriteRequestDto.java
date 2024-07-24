@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Getter
-public class BoardRequestDto {
+public class BoardWriteRequestDto {
     private String title;
     private String content;
     private String password;
