@@ -12,8 +12,6 @@ import java.time.LocalDateTime;
 public class BoardResponseDto {
     private String title;
     private String content;
-    private LocalDateTime createdAt;
-    private LocalDateTime modifiedAt;
 
     public BoardResponseDto(Board board){
         this.title = board.getTitle();
