@@ -195,4 +195,4 @@ name과content속성을 사용하여 소개를 웹페이지를 함축적으로 �
 
 
 # css 개구리 문제
-![스크린샷 2024-07-24 200557](https://github.com/user-attachments/assets/aa381525-6f18-44b6-8685-a8bad91685ae)
+![스크린샷 2024-07-24 233311](https://github.com/user-attachments/assets/26b8df46-ecd8-4cb1-9418-6f4cdfdcf6c5)
