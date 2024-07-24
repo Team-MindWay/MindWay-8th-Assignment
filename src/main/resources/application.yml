@@ -1,6 +1,6 @@
 spring:
     datasource:
-        url: jdbc:mysql://localhost:3307/mindwaytest?serverTimezone=Asia/Seoul&useSSL=false&allowPublicKeyRetrieval=true
+        url: {$URL}
         username: {$USERNAME}
         password: {$PASSWORD}
         driver-class-name: com.mysql.cj.jdbc.Driver
