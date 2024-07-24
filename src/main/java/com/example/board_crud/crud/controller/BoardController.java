@@ -4,20 +4,18 @@ import com.example.board_crud.crud.Dto.BoardListResponseDto;
 import com.example.board_crud.crud.Dto.BoardRequestDto;
 import com.example.board_crud.crud.Dto.BoardResponseDto;
 import com.example.board_crud.crud.service.BoardService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 public class BoardController {
 
     private final BoardService boardService;
 
-    @Autowired
-    public BoardController(BoardService boardService){
-        this.boardService = boardService;
-    }
     //글 등록
     @PostMapping("/boards")
     public BoardResponseDto createBoard(@RequestBody BoardRequestDto requestDto){
