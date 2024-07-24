@@ -5,8 +5,6 @@ import com.example.board_crud.crud.entity.Board;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-
 @NoArgsConstructor
 @Getter
 public class BoardResponseDto {
