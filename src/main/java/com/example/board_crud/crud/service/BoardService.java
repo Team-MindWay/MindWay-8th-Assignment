@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -25,19 +26,16 @@ public class BoardService {
     }
     //모든 글 가져오기
     public List<BoardListResponseDto> findAllBoard(){
-        try{
-            List<Board> boardList = boardRepository.findAll();
-            List<BoardListResponseDto> responseDtoList = new ArrayList<>();
-            for (Board board : boardList){
-                responseDtoList.add(
-                        new BoardListResponseDto(board)
-                );
+        List<Board> boardList = boardRepository.findAll();
+        List<BoardListResponseDto> responseDtoList = new ArrayList<>();
+
+        Optional.ofNullable(boardList).ifPresent(list -> {
+            for(Board board : list) {
+                responseDtoList.add(new BoardListResponseDto(board));
             }
-            return responseDtoList;
-        }catch (Exception e){
-            //throw new DBEmptyDataException("a");
-        }
-        return null;
+        });
+
+        return responseDtoList;
     }
     //글 하나 가져오기
     public BoardResponseDto findOneBoard(Long id){
