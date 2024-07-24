@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @NoArgsConstructor
-@Entity(name = "users")
+@Entity(name = "boards")
 @Getter
 public class Board {
     //글 고유 아이디
