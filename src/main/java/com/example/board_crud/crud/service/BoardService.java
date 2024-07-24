@@ -6,14 +6,14 @@ import com.example.board_crud.crud.Dto.BoardResponseDto;
 import com.example.board_crud.crud.entity.Board;
 import com.example.board_crud.crud.repository.BoardRepository;
 import jakarta.transaction.Transactional;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class BoardService {
 
     private final BoardRepository boardRepository;
