@@ -22,7 +22,4 @@ public class BoardListResponseDto {
     public BoardListResponseDto(Board board){
         this.title = board.getTitle();
     }
-    public BoardListResponseDto(Optional<Board> board){
-        this.title = board.get().getTitle();
-    }
 }
